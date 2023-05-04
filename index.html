@@ -1,0 +1,56 @@
+<!-- Workbook 3 Exercise 1 page 87 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ACME Car Rental</h1>
+    <fieldset>
+        <div>
+            <label for="inputPickupDate">Pickup date: </label>
+            <input type="date" name="inputPickupDate" id="inputPickupDate">
+        </div>
+        <br>
+        <div>
+            <label for="inputNumDays">Number of days: </label>
+            <input type="number" name="inputNumDays" id="inputNumDays">
+        </div>
+        <p>Options</p>
+        <div>
+            <input type="checkbox" name="options" id="tollTag" value="3.95">
+            <label for="tollTag">Electronic Toll Tag ($3.95)</label>
+        </div>
+        <div>
+            <input type="checkbox" name="options" id="gps" value="2.95">
+            <label for="gps">GPS ($2.95)</label>
+        </div>
+        <div>
+            <input type="checkbox" name="options" id="roadside" value="2.95">
+            <label for="roadside">Roadside Assistance ($2.95)</label>
+        </div>
+        <div>
+            <p>Under 25</p>
+            <input type="radio" name="under25Check" id="noRadio" value="noRadio">
+            <label for="noRadio">No</label>
+            <input type="radio" name="under25Check" id="yesRadio" value="yesRadio">
+            <label for="yesRadio">Yes</label>
+        </div>
+        <br>
+
+        <!-- Button -->
+        <button id="totalBtn">Estimate Total Cost</button>
+
+        <div id="totalMessages">
+            <p id="carRentalTotalMessage">Car rental: XXX.XX</p>
+            <p id="optionsMessage">Options: XX.XX</p>
+            <p id="under25Message">Under 25 surcharge: XX.XX</p>
+            <p id="totalDueMessage">Total due: XXX.XX</p>
+        </div>
+    </fieldset>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
